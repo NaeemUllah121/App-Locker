@@ -1,0 +1,44 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/lockforme/app/src/main/res/drawable/bg_checkbox_lock.xml" value="0.2703125" />
+        <entry key="..\:/lockforme/app/src/main/res/layout/activity_about_me.xml" value="0.25052083333333336" />
+        <entry key="..\:/lockforme/app/src/main/res/layout/activity_chnage_theme.xml" value="0.25416666666666665" />
+        <entry key="..\:/lockforme/app/src/main/res/layout/activity_create_pwd.xml" value="0.2" />
+        <entry key="..\:/lockforme/app/src/main/res/layout/activity_gesture_lock.xml" value="0.25052083333333336" />
+        <entry key="..\:/lockforme/app/src/main/res/layout/activity_gesture_self_unlock.xml" value="0.25052083333333336" />
+        <entry key="..\:/lockforme/app/src/main/res/layout/activity_gesture_unlock.xml" value="0.25052083333333336" />
+        <entry key="..\:/lockforme/app/src/main/res/layout/activity_lock_main.xml" value="0.25052083333333336" />
+        <entry key="..\:/lockforme/app/src/main/res/layout/activity_main.xml" value="0.25052083333333336" />
+        <entry key="..\:/lockforme/app/src/main/res/layout/activity_pin.xml" value="0.176" />
+        <entry key="..\:/lockforme/app/src/main/res/layout/activity_setting.xml" value="0.264" />
+        <entry key="..\:/lockforme/app/src/main/res/layout/activity_splash.xml" value="0.25052083333333336" />
+        <entry key="..\:/lockforme/app/src/main/res/layout/activity_theme_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/lockforme/app/src/main/res/layout/dialog_lock_select_time.xml" value="0.25052083333333336" />
+        <entry key="..\:/lockforme/app/src/main/res/layout/dialog_permission.xml" value="0.25052083333333336" />
+        <entry key="..\:/lockforme/app/src/main/res/layout/dialog_search.xml" value="0.25052083333333336" />
+        <entry key="..\:/lockforme/app/src/main/res/layout/fragment_app_list.xml" value="0.25052083333333336" />
+        <entry key="..\:/lockforme/app/src/main/res/layout/fragment_camera2.xml" value="0.25052083333333336" />
+        <entry key="..\:/lockforme/app/src/main/res/layout/item_change_theme.xml" value="0.25416666666666665" />
+        <entry key="..\:/lockforme/app/src/main/res/layout/item_lock_list.xml" value="0.25052083333333336" />
+        <entry key="..\:/lockforme/app/src/main/res/layout/item_lock_select_time.xml" value="0.25052083333333336" />
+        <entry key="..\:/lockforme/app/src/main/res/layout/item_lock_top.xml" value="0.25052083333333336" />
+        <entry key="..\:/lockforme/app/src/main/res/layout/item_main_list.xml" value="0.12760416666666666" />
+        <entry key="..\:/lockforme/app/src/main/res/layout/layout_toolbar.xml" value="0.25052083333333336" />
+        <entry key="..\:/lockforme/app/src/main/res/layout/layout_toolbar_title.xml" value="0.25052083333333336" />
+        <entry key="..\:/lockforme/app/src/main/res/layout/pop_unlock_menu.xml" value="0.25052083333333336" />
+        <entry key="..\:/lockforme/app/src/main/res/menu/menu_create_pwd.xml" value="0.25052083333333336" />
+        <entry key="..\:/lockforme/app/src/main/res/menu/option_menu.xml" value="0.25052083333333336" />
+        <entry key="..\:/lockforme/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2703125" />
+        <entry key="..\:/lockforme/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2703125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.setting.ThemeHomeActivity">
+
+    <ImageView
+        android:id="@+id/set_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        tools:srcCompat="@tools:sample/avatars" />
+    <Button
+        android:id="@+id/btn_set_theme"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/set_image"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/transparent"
+        android:backgroundTint="#0CACF4"
+        android:text=" Apply "
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        tools:ignore="UnknownId" />
+
+</RelativeLayout>

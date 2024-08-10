@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.qsa.lock">
+
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:node="remove"
+        tools:selector="com.helpshift"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <uses-feature
+        android:name="android.hardware.fingerprint"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- <uses-permission android:name="android.permission.CAMERA"/> -->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <application
+        android:name=".LockApplication"
+
+        android:allowBackup="true"
+        android:icon="@drawable/applock"
+        android:label="@string/app_name"
+        android:manageSpaceActivity="com.qsa.lock.activities.main.SplashActivity"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.setting.ThemeHomeActivity"
+            android:exported="true" />
+
+        <receiver
+            android:name=".receiver.LockRestarterBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartServiceWhenStopped" />
+
+        <activity
+            android:name=".activities.main.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.pwd.CreatePwdActivity"
+            android:label="Create Password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.lock.GestureSelfUnlockActivity"
+            android:label="Unlock"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.setting.ChangeThemeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.lock.GestureUnlockActivity"
+            android:excludeFromRecents="true"
+            android:label=""
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/unlock_activity_style" />
+        <activity
+            android:name=".activities.setting.LockSettingActivity"
+            android:label="Settings"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".activities.lock.GestureCreateActivity"
+            android:label="Create a pattern lock"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.about.AboutMeActivity"
+            android:label="About me"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.main.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".services.LoadAppListService" />
+        <service android:name=".services.LockService" />
+
+        <receiver android:name=".receiver.BootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
